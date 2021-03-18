@@ -1,7 +1,7 @@
 #when you create iam role,you select service to view its cases.select s3,then add permissions,i selected s3 full access,then click next next and type name and create role,
 # when you create role ,go to trust relationship and click edit.you will see json file .I have copied that Json file under assume role policy.
 resource "aws_iam_role" "ec2_s3_access" {
-  name                 = var.ec2_role_name
+  name                 = <give some name to the role>
   assume_role_policy   = <<POLICY
 {
   "Version": "2012-10-17",
